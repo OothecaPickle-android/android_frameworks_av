@@ -42,10 +42,6 @@ const engineConfig::ProductStrategies gOrderedStrategies = {
     },
     {"STRATEGY_SONIFICATION", STRATEGY_SONIFICATION,
      {
-         {AUDIO_STREAM_RING, "AUDIO_STREAM_RING",
-          {{AUDIO_CONTENT_TYPE_UNKNOWN, AUDIO_USAGE_NOTIFICATION_TELEPHONY_RINGTONE,
-            AUDIO_SOURCE_DEFAULT, AUDIO_FLAG_NONE, ""}}
-         },
          {AUDIO_STREAM_ALARM, "AUDIO_STREAM_ALARM",
           {{AUDIO_CONTENT_TYPE_UNKNOWN, AUDIO_USAGE_ALARM, AUDIO_SOURCE_DEFAULT,
             AUDIO_FLAG_NONE, ""}},
@@ -77,6 +73,10 @@ const engineConfig::ProductStrategies gOrderedStrategies = {
               {AUDIO_CONTENT_TYPE_UNKNOWN, AUDIO_USAGE_NOTIFICATION_EVENT,
                AUDIO_SOURCE_DEFAULT, AUDIO_FLAG_NONE, ""}
           }
+         },
+         {AUDIO_STREAM_RING, "AUDIO_STREAM_RING",
+          {{AUDIO_CONTENT_TYPE_UNKNOWN, AUDIO_USAGE_NOTIFICATION_TELEPHONY_RINGTONE,
+            AUDIO_SOURCE_DEFAULT, AUDIO_FLAG_NONE, ""}}
          }
      },
     },
